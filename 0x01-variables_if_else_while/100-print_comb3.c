@@ -3,7 +3,7 @@
 /**
  * main - Prints combination of numbers
  *
- * main - Prints combination of numbers
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -31,4 +31,5 @@ putchar('\n');
 
 return (0);
 }
+
 
