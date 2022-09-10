@@ -1,48 +1,43 @@
 #include <stdio.h>
 
 /**
- *  main - Prints 3 combination of numbers
- *
- *  Return: Always (Success)
+ *  main - program that prints all possible combinations of
+ *  two two-digit
+ *  The numbers should range from 0 to 99
+ *  Numbers must be seperated by, followed by a space
+ *  All numbers should be printed with two digits. 1 should be printed as 01
+ *  Return: 0
  */
 int main(void)
 {
-int c, i, k, j;
+int n1 = 48;
+int a = 0;
+int b;
+int com = 44;
 
-for (c = 48; c <= 57; c++)
+while (a <= 99)
 {
-for (i = 48; i <= 57; i++)
+b = a + 1
+while (b <= 99)
 {
-for (k = 48; k <= 57; k++)
+putchar((a/10) + n1);
+putchar((a % 10) + n1);
+putchar(32);
+putchar((b / 10) + n1);
+putchar((b % 10) + n1);
+if (a != 98 || b != 99)
 {
-for (j = 48; j <= 57; j++)
-{
-if (((k + j) > (c + i) &&  k >= c) || c < k)
-{
-putchar(c);
-putchar(i);
-putchar(' ');
-putchar(k);
-putchar(j);
-
-if (c + i + k + j == 227 && c == 57)
-{
-break;
+putchar(com);
+putchar(32);
 }
-else
-{
-putchar(',')
-putchar(' ');
+b += 1;
 }
+a += 1;
 }
-}
-}
-}
-}
-
 putchar('\n');
 
 return (0);
 }
+
 
 
