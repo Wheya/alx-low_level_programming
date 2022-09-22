@@ -3,6 +3,7 @@
 /**
  * _strcat - concatenate two strings together
  * @dest: destination
+ * @src: source
  * Return: 0
  */
 
