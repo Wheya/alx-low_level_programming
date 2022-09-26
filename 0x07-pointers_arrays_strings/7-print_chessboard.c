@@ -7,7 +7,7 @@
  */
 void print_chessboard(char (*a)[8])
 {
-/*Declaring variables*
+/*Declaring variables*/
 int i, j;
 
 i = 0;
